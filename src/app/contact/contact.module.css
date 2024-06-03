@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.imgContainer {
+  flex: 1;
+  position: relative;
+  height: 500px;
+  width: 500px;
+}
+.img {
+  object-fit: contain;
+}
+.formContainer {
+  flex: 1;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25vw;
+}
+.form input,
+.form textarea{
+   padding: 20px;
+   border-radius: 5px;
+   border: none;
+   background-color:rgb(18, 72, 94);
+   outline: none;
+   color:  var(--text);
+}
+.form button{
+     padding: 10px;
+     border-radius:20px;
+     background-color: skyblue;
+     color: var(--text);
+     font-weight: bolder;
+
+}
+
+.button:hover{
+       background-color: rgb(101, 101, 186);
+}
+@media(max-width: 768px){
+     .container{
+         flex-direction: column;
+     }
+}
